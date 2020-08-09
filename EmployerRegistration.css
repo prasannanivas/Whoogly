@@ -1,0 +1,134 @@
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red);
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.form {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    width: 40vw;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 30px;
+}
+
+.form h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.form label {
+    display: block;
+    width: 38vw;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.form label span {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(73, 61, 29)
+}
+
+input {
+    display: block;
+    width: 38vw;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 20);
+    border-radius: 20px;
+    text-align: center;
+}
+
+input:focus {
+    border: 1px solid green;
+    height: 5vh;
+}
+
+button {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, green, yellow);
+    color: rgb(255, 255, 255);
+}
+
+.choices {
+    margin-bottom: 15vh;
+}
+
+.choice2 {
+    padding: 10px 6vw;
+    float: right;
+    border-radius: 2px;
+    color: rgb(100, 100, 100);
+    background: -webkit-linear-gradient(left, green, yellow);
+}
+
+.choice1 {
+    float: left;
+    border: 1px solid green;
+    padding: 10px 6vw;
+    cursor: pointer;
+}
+
+.forgot-pw {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media(max-width:1000px) {
+    .form {
+        width: 60vw;
+    }
+    .form label {
+        width: 58vw;
+    }
+    input {
+        width: 56vw;
+    }
+}
+
+@media(max-width:600px) {
+    .form {
+        width: 80vw;
+    }
+    .form label {
+        width: 75vw;
+    }
+    input {
+        width: 70vw;
+    }
+    .choices {
+        margin-bottom: 15vh;
+    }
+}

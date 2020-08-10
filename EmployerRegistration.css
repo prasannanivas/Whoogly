@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red);
+    background: -webkit-linear-gradient(left, rgb(6, 170, 148), green);
 }
 
 input,

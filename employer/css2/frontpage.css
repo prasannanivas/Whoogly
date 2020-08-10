@@ -1,0 +1,49 @@
+.selection {
+    /*background-color: #3AAFA9;*/
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.selection input[type="radio"] {
+    -webkit-appearance: none;
+}
+
+.selection label {
+    height: 200px;
+    width: 500px;
+    border: 6px solid #18f98d;
+    position: absolute;
+    margin: auto;
+    border-radius: 10px;
+    color: #18f98d;
+    transition: 0.5s;
+}
+
+.selection label:hover {
+    background-color: #000000;
+}
+
+.selection .fa {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.selection label>span {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.selection input[type="radio"]:checked+label {
+    background-color: #18f98d;
+    color: #FFFFFF;
+    box-shadow: 0 15px 45px rgba(24, 249, 141, 0.2);
+}

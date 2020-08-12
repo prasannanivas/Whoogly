@@ -1,0 +1,81 @@
+Ahtml{
+  box-sizing: border-box;
+  
+}
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+.dash {
+    display: flex;
+}
+
+.filters {
+    background: white;
+    width: 30vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.companies {
+    background-color: #3aafa9;
+    width: 70vw;
+    height: 100vh;
+}
+.container{
+  margin: auto;
+  position: relative;
+  width: 200px;
+  height: 65%;
+  background-color:#FFffff; 
+  padding: 60px 40px;
+  margin-top: 70px;
+  background-color: #3aafa9;
+  border-radius: 60px;
+
+}
+
+header{
+  font-size: 20px;
+  margin:auto;
+  font-family: 'Montserrat' , sans-serif;
+}
+.fa{
+   font-size: 80px;
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform:  translate(-50%,-80%);
+}
+.input-field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid silver;
+  padding-left: 15px;
+  outline: none;
+  font-size: 19px;
+  transition: 0.5s; 
+}
+input:focus{
+  border: 1px solid #71b071;
+}
+.input-field label{
+  position: relative;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: grey;
+  font-size: 14px;
+  transition: 0.5s;
+}
+input:focus ~ label, input:valid ~ label{
+  transform: translateY(-33px);
+  background: white;
+  font-size: 16px;
+  color: #71b071;
+}
+.input label{
+  color: grey;
+}

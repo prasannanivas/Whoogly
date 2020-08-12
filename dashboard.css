@@ -1,0 +1,132 @@
+.dash {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.companies {
+    background: #3aafa9;
+    width: 60vw;
+    height: 100vh;
+    padding-top: 20vh;
+    align-items: center;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.companies ul {
+    list-style: none;
+    align-items: center;
+}
+
+.company_card {
+    transition: all .8s;
+    padding: 20px;
+    height: 30vh;
+    margin-left: 15vh;
+    width: 30vw;
+    margin-bottom: 10vh;
+    background-color: rgb(252, 252, 252);
+    border: 5px solid rgba(12, 12, 12, 0.6);
+    border-radius: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+.company_card a {
+    text-decoration: none;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.company_card img {
+    transition: all .7s;
+    margin: 10px;
+    width: 8vw;
+    height: 8vh;
+    float: left;
+}
+
+.company_card:hover {
+    height: 31vh;
+    width: 31vw;
+    background-color: rgb(46, 48, 48);
+    color: white;
+}
+
+.company_name {
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intern_name {
+    position: relative;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.details {
+    margin-top: 6vh;
+    display: flex;
+}
+
+.idet {
+    width: 10vw;
+}
+
+.adet {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.company_card button {
+    float: right;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    background-color: #3aafa9;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 20px;
+}
+
+.company_card button:hover {
+    cursor: pointer;
+    background-color: teal;
+}
+
+@media(max-width:1000px) {
+    .filters {
+        display: none;
+    }
+    .companies {
+        width: 100vw;
+        float: left;
+    }
+    .company_card {
+        transition: all .8s;
+        padding: 10px;
+        height: 40vh;
+        float: left;
+        margin-left: 0vw;
+        width: 80vw;
+        margin-bottom: 10vh;
+        background-color: rgb(252, 252, 252);
+        border: 5px solid rgba(10, 10, 10, 0.6);
+        border-radius: 10px;
+    }
+    .company_card img {
+        transition: all .7s;
+        margin: 4px;
+        width: 16vw;
+        height: 8vh;
+        float: left;
+    }
+    h4 {
+        padding: 6px;
+    }
+}

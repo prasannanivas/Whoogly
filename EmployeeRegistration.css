@@ -129,7 +129,9 @@ input:focus {
     height: 5vh;
 }
 
-button {
+.submit {
+    text-align: center;
+    justify-content: center;
     display: block;
     margin: 0px auto;
     width: 260px;
